@@ -35,7 +35,7 @@ function move(x, y){
 
             if(blockNextTile.classList.contains(Tiles.Goal)){
                 blockNextTile.classList.add(Entities.BlockDone);                
-            }
+            }//
             else {  //Empty
                 blockNextTile.classList.add(Entities.Block);
                 goals--;
