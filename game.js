@@ -39,7 +39,7 @@ function move(x, y){
             else {  //Empty
                 blockNextTile.classList.add(Entities.Block);
                 goals--;
-            }
+            }///
             nextTile.classList.remove(Entities.BlockDone);
             nextTile.classList.add(Entities.Character);
             currentTile.classList.remove(Entities.Character);
