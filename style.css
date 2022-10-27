@@ -1,0 +1,39 @@
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(19,0fr);
+    grid-row: minmax(50px,50px);
+}
+
+.tile-all{
+    width: 35px;
+    height: 35px;
+}
+
+.tile-wall{
+
+    background-image: url(Wall.png);
+}
+
+
+.tile-space{
+
+    background-image: url(Floor.png);
+}
+
+
+
+.tile-goal{
+    background-image: url(Goal.png);    
+}
+
+.entity-block{
+    background-image: url(Box.png);
+}
+
+.entity-block-goal{
+    background-image: url(ScoreBox.png);
+}
+
+.entity-player{
+    background-image: url(Player.png);
+}
