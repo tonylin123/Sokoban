@@ -35,11 +35,11 @@ function move(x, y){
 
             if(blockNextTile.classList.contains(Tiles.Goal)){
                 blockNextTile.classList.add(Entities.BlockDone);                
-            }//
+            }
             else {  //Empty
                 blockNextTile.classList.add(Entities.Block);
                 goals--;
-            }///
+            }
             nextTile.classList.remove(Entities.BlockDone);
             nextTile.classList.add(Entities.Character);
             currentTile.classList.remove(Entities.Character);
@@ -55,13 +55,19 @@ function move(x, y){
         PlayerPosition.Y+=y;
     }
     document.getElementById("score").innerHTML=goals;
+    
     if(goals==maxGoals){
         
-            
-        //document.getElementById("gameboard").innerHTML="You win!";
+        document.getElementById("mission").innerHTML="Mission Complete!";
+      
+          
+           
+           
+       
        
     }
 }
+
 
 function readKey(key){
     key.preventDefault();
