@@ -91,6 +91,8 @@ function readKey(key){
 function init(){
     window.addEventListener("keydown",readKey);
     drawBoard();
+    //
+    document.getElementById("mission").innerHTML=" ";
 }
 
 function drawBoard(){
