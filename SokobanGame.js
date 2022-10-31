@@ -107,6 +107,8 @@ function drawBoard(){
     gameboardId.innerHTML="";
     console.log(Tiles.Wall);
     console.log(Entities.Character);
+    console.log(Entities.Block);
+    console.log(Tiles.Goal);
     
     for(let col = 0 ; col < tileMap01.height ; col++){
         for(let row = 0 ; row < tileMap01.width ; row++){
