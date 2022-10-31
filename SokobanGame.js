@@ -36,7 +36,7 @@ function move(x, y){
             if(blockNextTile.classList.contains(Tiles.Goal)){
                 blockNextTile.classList.add(Entities.BlockDone);                
             }
-            else {  //Empty
+            else {  
                 blockNextTile.classList.add(Entities.Block);
                 goals--;
             }
@@ -72,16 +72,20 @@ function move(x, y){
 function readKey(key){
     key.preventDefault();
     switch (key.keyCode){
-        case 37:  //left
+        //Key value left
+        case 37:  
             move(-1, 0);
             break;
-        case 38:  //up
+            //Key value up
+        case 38:  
             move(0 , -1);
             break;
-        case 39:  //right
+            //Key value right
+        case 39:  
             move(1, 0);
             break;
-        case 40:  //down
+            //Key value  down
+        case 40:  
             move(0, 1);
             break;
     }
@@ -91,7 +95,7 @@ function readKey(key){
 function init(){
     window.addEventListener("keydown",readKey);
     drawBoard();
-    //
+    
     document.getElementById("mission").innerHTML=" ";
 }
 
